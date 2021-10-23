@@ -82,7 +82,3 @@ node server.js
 [![GitHub license](https://img.shields.io/github/license/mrtofuuu/gear-second-note-taker?style=for-the-badge)](./LICENSE.md)
 
 
-
-
-https://user-images.githubusercontent.com/84428685/138572489-61f73be1-9830-4aee-802e-e8343c989e30.mp4
-
