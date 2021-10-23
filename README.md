@@ -1,11 +1,12 @@
-# 11 Express.js: gear-second-note-taker
+# Gear Second Note Taker
 
-## Your Task
+## Description
 
-Your assignment is to modify starter code to create an application called Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.
+A beefed up Note Taker using Express.js that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.
 
-The application’s front end has already been created. It's your job to build the back end, connect the two, and then deploy the entire application to Heroku.
+### **Tasks completed**
 
+Created a Note Taker using Express.js and Node.js.
 
 ## User Story
 
@@ -35,96 +36,49 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ```
 
 
-## Mock-Up
+## Installation
 
-The following images show the web application's appearance and functionality:
+**HAVING NODE.JS INSTALLED IS A REQUIREMENT FOR THIS APPLICATION TO WORK!**
 
-![Existing notes are listed in the left-hand column with empty fields on the right-hand side for the new note’s title and text.](./Assets/11-express-homework-demo-01.png)
+1. Download all files from the repository.
+2. CD into the repository.
+3. Run this command to install all dependancies
+```md
+npm install
+```
+4. Run this command to run the application
+```md
+node server.js
+```
 
-![Note titled “Balance accounts” reads, “Balance account books by end of day Monday,” with other notes listed on the left.](./Assets/11-express-homework-demo-02.png)
+## Screenshots and Video Link of application
 
-
-## Getting Started
-
-On the back end, the application should include a `db.json` file that will be used to store and retrieve notes using the `fs` module.
-
-The following HTML routes should be created:
-
-* `GET /notes` should return the `notes.html` file.
-
-* `GET *` should return the `index.html` file.
-
-The following API routes should be created:
-
-* `GET /api/notes` should read the `db.json` file and return all saved notes as JSON.
-
-* `POST /api/notes` should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client. You'll need to find a way to give each note a unique id when it's saved (look into npm packages that could do this for you).
+![Gear Second Screenshot](./screenshots/gear-second-note-taker.gif)
 
 
-## Bonus
+### **Links**
 
-You haven’t learned how to handle DELETE requests, but this application offers that functionality on the front end. As a bonus, try to add the DELETE route to the application using the following guideline:
+[Link to the code repository](https://github.com/MrTofuuu/gear-second-note-taker)
 
-* `DELETE /api/notes/:id` should receive a query parameter that contains the id of a note to delete. To delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
+[Link to Heroku app](https://gear-second-note-taker.herokuapp.com/)
 
+## Credits
 
-## Grading Requirements
+* Chris Stallcup
+* Corbin Bell
+* Mini Project from the boot camp
 
-This homework is graded based on the following criteria: 
-
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the preceding acceptance criteria plus the following:
-
-  * Application front end must connect to an Express.js back end.
-
-  * Application back end must store notes that have a unique id in a JSON file.
-
-  * Application must be deployed to Heroku.
+### References and tutorials utilized
+* [https://www.markdownguide.org/basic-syntax/](https://www.markdownguide.org/basic-syntax/)
+* [https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
+* [https://betterprogramming.pub/add-badges-to-a-github-repository-716d2988dc6a](https://betterprogramming.pub/add-badges-to-a-github-repository-716d2988dc6a)
 
 
-### Deployment: 36%
+## Badges
 
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository contains application code.
+[![GitHub open issues](https://img.shields.io/github/issues/MrTofuuu/gear-second-note-taker?style=for-the-badge)](https://github.com/MrTofuuu/gear-second-note-taker/issues)
+[![GitHub closed issues](https://img.shields.io/github/issues-closed/MrTofuuu/gear-second-note-taker?style=for-the-badge)](https://img.shields.io/github/issues-closed/MrTofuuu/gear-second-note-taker?style=for-the-badge)
+[![GitHub stars](https://img.shields.io/github/stars/MrTofuuu/gear-second-note-taker?style=for-the-badge)](https://github.com/MrTofuuu/gear-second-note-taker/stargazers)
+[![GitHub license](https://img.shields.io/github/license/mrtofuuu/gear-second-note-taker?style=for-the-badge)](./LICENSE.md)
 
 
-### Application Quality: 11%
-
-* Application console is free of errors.
-
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
-
-
-### Bonus: +10 Points
-
-* Application allows users to delete notes.
-
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository, with a unique name and a README describing the project.
-
-- - -
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
